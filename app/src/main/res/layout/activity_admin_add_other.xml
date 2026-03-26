@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8"
+    android:fillViewport="true">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="24dp"
+android:gravity="center_horizontal">
+
+<!-- App Logo -->
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@mipmap/logo_one"
+    app:civ_border_width="3dp"
+    app:civ_border_color="@color/softPink"/>
+
+<!-- App Name -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Adorable Knots"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="@color/roseGold"
+    android:layout_marginTop="14dp"/>
+
+<!-- Tagline -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Handmade with love 🧶"
+    android:textSize="16sp"
+    android:textColor="@color/lightBrown"
+    android:layout_marginBottom="20dp"/>
+
+<!-- About Card -->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#F3E5D8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Our Shop"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/softPink"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We create handmade crochet items including toys, flowers, keychains and custom gifts. Each product is carefully crafted using soft yarn and lots of patience to make every piece special."
+            android:textSize="14sp"
+            android:textColor="@color/warmBrown"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<!-- Care Instructions -->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#F3E5D8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Care Instructions"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/softPink"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Hand wash only&#10;• Do not machine wash&#10;• Do not bleach&#10;• Dry in shade&#10;• Keep away from sharp objects"
+            android:textSize="14sp"
+            android:textColor="@color/warmBrown"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<!-- Contact -->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#F3E5D8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/softPink"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram: @adorable_knots&#10;WhatsApp: +91 7861969787"
+            android:textSize="14sp"
+            android:textColor="@color/warmBrown"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Share App -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#F3E5D8">
+
+            <TextView
+                android:id="@+id/tvShareApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share Our App ❤"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/roseGold"
+                android:letterSpacing="0.04"
+                android:padding="8dp"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+    </ScrollView>

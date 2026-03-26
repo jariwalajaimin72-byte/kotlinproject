@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="headingPink">#C67C8A</color>
+    <color name="roseGold">#B76E79</color>
+    <color name="deepPink">#C75C8A</color>
+    <color name="warmBrown">#7D5A5A</color>
+    <color name="lightPinkBg">#FFF5F8</color>
+    <color name="very_light_pink">#FFF5F8</color>
+    <color name="deepRose">#D32F2F</color> <!-- or whatever color you want -->
+    <color name="creamNude">#F3E5D8</color>
+    <color name="softPink">#C67C8A</color>
+    <color name="lightBrown">#A1887F</color>
+
+    <color name="creamCard">#FFF3E8</color>        <!-- Nude / Cream -->
+    <color name="rosePink">#E89CA9</color>
+    <!-- Buttons -->
+    <color name="roseDark">#D55A7C</color>
+    <color name="deeperPink">#C75C78</color>       <!-- Icons -->
+    <color name="dark_brown">#4B2E2E</color>
+
+
+    <!-- Background -->
+        <color name="bg_main">#F7F1EB</color>
+
+        <!-- Text -->
+        <color name="text_primary">#3E342E</color>
+        <color name="text_secondary">#8A7F76</color>
+
+        <!-- Accent -->
+        <color name="accent_soft">#E8A598</color>
+        <color name="accent_rose">#D98C9A</color>
+
+        <!-- Card -->
+        <color name="card_bg">#FFFFFF</color>
+
+
+</resources>

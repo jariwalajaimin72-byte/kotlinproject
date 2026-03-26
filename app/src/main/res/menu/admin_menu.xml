@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/admin_dash_menu"
+        android:icon="@mipmap/dashboards"
+        android:title="Dashboard"/>
+
+    <item
+        android:id="@+id/admin_report_menu"
+        android:icon="@mipmap/report"
+        android:title="Reports"/>
+
+    <item
+        android:id="@+id/admin_logout_logout"
+        android:icon="@mipmap/logout"
+        android:title="Logout"/>
+</menu>

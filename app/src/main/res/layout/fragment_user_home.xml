@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/lightPinkBg"
+    tools:context=".fragment.UserHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Top Section (Menu + Welcome Text) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Menu Icon -->
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:layout_marginEnd="12dp"
+                android:src="@mipmap/list"
+                android:contentDescription="Menu"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:tint="@color/deeperPink"
+                android:background="@color/creamNude"
+                android:elevation="4dp"
+                android:clipToOutline="true"
+                android:layout_gravity="center" />
+
+            <!-- Welcome Text Block -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adorable Knots"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_brown"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Handcrafted crochet made with love 🧶"
+                    android:textSize="14sp"
+                    android:textColor="@color/dark_brown"
+                    android:fontFamily="sans-serif"
+                    android:alpha="0.8" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Search Bar -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/creamNude">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:tint="@color/deeperPink"/>
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Search handmade crochet..."
+                    android:textColor="@color/dark_brown"
+                    android:textColorHint="@color/dark_brown"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="12dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <!-- Banner Slider -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:background="@color/creamNude">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:iss_auto_cycle="true"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:iss_text_align="CENTER" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Browse Categories -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"
+            android:fontFamily="sans-serif-medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcylCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Featured Collection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Featured Products"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_brown"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="@color/roseGold"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcylProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

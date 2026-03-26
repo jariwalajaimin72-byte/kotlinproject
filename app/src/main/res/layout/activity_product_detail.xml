@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/lightPinkBg"> <!-- very light pink -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Product Image Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="#FDF0E6"> <!-- cream/nude -->
+
+            <ImageView
+                android:id="@+id/imgProd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:contentDescription="product image"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/tvpname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Handmade Pearl Necklace"
+            android:textColor="@color/deeperPink"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Price Highlight -->
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 299"
+            android:textColor="#4B2E2E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#E0DCD5"/> <!-- soft divider -->
+
+        <!-- Description Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#FDF0E6"> <!-- cream/nude -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Description"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_brown" /> <!-- dark brown -->
+
+                <TextView
+                    android:id="@+id/tvpdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beautiful handmade jewellery designed for special occasions. Premium finish and skin-friendly material."
+                    android:textSize="15sp"
+                    android:textColor="#4B2E2E"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="2dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Buttons Row: Add To Cart + Favorite -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add To Cart"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#D16B89"
+                android:elevation="6dp"
+                android:layout_marginEnd="8dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

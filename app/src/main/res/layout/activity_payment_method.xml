@@ -1,0 +1,89 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPinkBg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Method"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/deeperPink"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Payment Options Card-like -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FDF0E6"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:clipToPadding="false"
+            android:layout_marginHorizontal="4dp"
+            android:backgroundTintMode="src_over"
+            android:backgroundTint="#FDF0E6">
+
+            <RadioGroup
+                android:id="@+id/radioGroupPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioCOD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash on Delivery"
+                    android:textColor="#4B2E2E"
+                    android:buttonTint="#D16B89" /> <!-- deeper pink -->
+
+                <RadioButton
+                    android:id="@+id/radioUPI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UPI / Google Pay"
+                    android:textColor="#4B2E2E"
+                    android:buttonTint="#D16B89"
+                    android:layout_marginTop="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit / Debit Card"
+                    android:textColor="#4B2E2E"
+                    android:buttonTint="#D16B89"
+                    android:layout_marginTop="8dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Pay Now Button -->
+        <Button
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#D16B89"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"/>
+
+    </LinearLayout>
+</ScrollView>

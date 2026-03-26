@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header / Title -->
+        <TextView
+            android:id="@+id/tvPrivacyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/deeperPink"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Privacy Content Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="#FDF0E6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvPrivacyContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4B2E2E"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:letterSpacing="0.01"
+                    android:fontFamily="sans-serif" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Accept Button -->
+<!--        <Button-->
+<!--            android:id="@+id/btnAcceptPrivacy"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:text="Accept and Continue"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:fontFamily="sans-serif-medium"-->
+<!--            android:letterSpacing="0.02"-->
+<!--            android:backgroundTint="#D16B89"-->
+<!--            android:elevation="6dp"-->
+<!--            android:layout_marginBottom="16dp"/>-->
+
+    </LinearLayout>
+</ScrollView>

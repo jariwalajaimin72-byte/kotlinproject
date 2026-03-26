@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/lightPinkBg">
+
+    <!-- Profile Image with Shadow -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/logo_one"
+        app:civ_border_color="@color/roseGold"
+        app:civ_border_width="3dp"
+        android:elevation="6dp"
+        android:clipToOutline="true" />
+
+    <!-- Decorative underline -->
+    <View
+        android:layout_width="60dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/rosePink"
+        android:alpha="0.6" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_brown"
+        android:layout_marginTop="12dp"
+        android:letterSpacing="0.02"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="14sp"
+        android:textColor="@color/dark_brown"
+        android:layout_marginTop="4dp"
+        android:letterSpacing="0.01"
+        android:fontFamily="sans-serif" />
+
+    <!-- Optional small heart icon under email for theme accent -->
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/outline_credit_card_heart_24"
+        android:tint="@color/deeperPink"
+        android:contentDescription="Theme Accent" />
+
+</LinearLayout>

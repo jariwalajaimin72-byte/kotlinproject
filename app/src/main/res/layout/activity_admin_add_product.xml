@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/textViewHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Product"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/roseGold"
+            android:letterSpacing="0.05"
+            android:layout_marginBottom="18dp"/>
+
+        <!-- Main Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#F3E5D8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <!-- Product Image -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pImg"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/logo_one"
+                    android:layout_marginBottom="16dp"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@color/softPink"/>
+
+                <!-- Choose Image Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnChoose"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Choose Image"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/roseGold"
+                    app:cornerRadius="14dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Product Name -->
+                <EditText
+                    android:id="@+id/editTextPname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Product Name"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/warmBrown"
+                    android:textColorHint="@color/lightBrown"
+                    android:padding="12dp"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Product Price -->
+                <EditText
+                    android:id="@+id/editTextPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Price (₹)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/warmBrown"
+                    android:textColorHint="@color/lightBrown"
+                    android:padding="12dp"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Description -->
+                <EditText
+                    android:id="@+id/editTextPdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Description"
+                    android:gravity="top"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/warmBrown"
+                    android:textColorHint="@color/lightBrown"
+                    android:padding="12dp"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Category Spinner -->
+                <Spinner
+                    android:id="@+id/spCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="12dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Add Product Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Add Product"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/softPink"
+                    app:cornerRadius="16dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

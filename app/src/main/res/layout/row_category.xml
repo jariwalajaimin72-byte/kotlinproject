@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/creamNude">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical">
+
+        <!-- Category Image -->
+        <ImageView
+            android:id="@+id/imgCat"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/category_image_bg"
+            android:padding="6dp"
+            android:src="@mipmap/logo_one" />
+
+        <!-- Text + Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Category Name -->
+            <TextView
+                android:id="@+id/tvCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crochet Bags"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/warmBrown"
+                android:letterSpacing="0.03"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Edit Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCatEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="10dp"
+                    app:backgroundTint="@color/softPink"
+                    app:cornerRadius="14dp"
+                    app:elevation="3dp"/>
+
+                <!-- Delete Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCatDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/deepPink"
+                    app:backgroundTint="@android:color/transparent"
+                    app:strokeColor="@color/deepPink"
+                    app:strokeWidth="2dp"
+                    app:cornerRadius="14dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

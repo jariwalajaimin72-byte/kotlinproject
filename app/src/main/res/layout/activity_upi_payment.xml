@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="#FFF5F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tvUpiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPI Payment"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#4B3B2D"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- UPI ID Input -->
+    <EditText
+        android:id="@+id/edtUpiId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your UPI ID"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:backgroundTint="#FFF5E1"
+        android:textColor="#4B3B2D"
+        android:textColorHint="#A48D7E"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/btnPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#F28CA0"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPinkBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews and Feedback"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Review Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="@color/creamNude">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate Your Experience"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_brown"
+                    android:layout_marginBottom="10dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="@color/deepPink"
+                    android:layout_marginBottom="12dp"/>
+
+                <EditText
+                    android:id="@+id/etReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Write your review..."
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/dark_brown"
+                    android:textColorHint="@color/dark_brown"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:backgroundTint="@color/deepPink"/>
+
+                <Button
+                    android:id="@+id/btnSubmitReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Review"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="@color/rosePink"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feedback Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="@color/creamNude">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Give Us Feedback"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_brown"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/etFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:hint="Share suggestions or improvements..."
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/dark_brown"
+                    android:textColorHint="@color/dark_brown"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:backgroundTint="@color/deepPink"/>
+
+                <Button
+                    android:id="@+id/btnSubmitFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Feedback"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="@color/rosePink"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

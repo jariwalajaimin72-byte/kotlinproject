@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/user_privacy_menu"
+        android:icon="@mipmap/policy"
+        android:title="Privacy policy"/>
+
+    <item
+        android:id="@+id/user_Terms_menu"
+        android:icon="@mipmap/conditions"
+        android:title="Terms Conditions"/>
+
+    <item
+        android:id="@+id/user_contact_menu"
+        android:icon="@mipmap/contact"
+        android:title="Contact us"/>
+    <item
+        android:id="@+id/user_review_menu"
+        android:title="Reviews Feedback"
+        android:icon="@drawable/outline_credit_card_heart_24"/>
+
+</menu>

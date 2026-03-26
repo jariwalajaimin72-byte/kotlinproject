@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/lightPinkBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Cozy Cart 🧶"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Your lovingly picked crochet treasures are waiting."
+            android:textSize="14sp"
+            android:textColor="@color/dark_brown"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif"/>
+
+    </LinearLayout>
+
+
+    <!-- RecyclerView for Cart Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp" />
+
+    <!-- Total and Button Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total: ₹0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"
+            android:gravity="start" />
+
+        <Button
+            android:id="@+id/btnProceedPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Payment"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/roseGold"
+            android:textColor="@color/white"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"
+            android:clipToOutline="true"/>
+    </LinearLayout>
+
+</LinearLayout>

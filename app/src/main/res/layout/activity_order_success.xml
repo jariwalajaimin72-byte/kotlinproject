@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/lightPinkBg"> <!-- Very light pink -->
+
+    <!-- Success Icon -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pay_success"
+        android:contentDescription="Success"
+        android:layout_marginBottom="24dp"/> <!-- Deeper pink accent -->
+
+    <!-- Main Success Message -->
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Placed Successfully!"
+        android:textColor="#4B3B2D"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Additional Info -->
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for shopping with us 😊"
+        android:textColor="@color/warmBrown"
+        android:textSize="16sp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Continue Shopping Button -->
+    <Button
+        android:id="@+id/btnContinueShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Shopping"
+        android:textAllCaps="false"
+        android:backgroundTint="#F28CA0"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"/>
+
+</LinearLayout>

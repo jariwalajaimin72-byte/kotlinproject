@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "749028900984",
+    "firebase_url": "https://adorableknots-1f78f-default-rtdb.firebaseio.com",
+    "project_id": "adorableknots-1f78f",
+    "storage_bucket": "adorableknots-1f78f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749028900984:android:321d61b533e63bb8cfad8d",
+        "android_client_info": {
+          "package_name": "com.example.kotlinproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw1pJivO_D-U8pDVMQK_PLdGSIXRjj61I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/user_home_menu"
+        android:icon="@mipmap/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/user_cart_menu"
+        android:icon="@mipmap/cart"
+        android:title="Cart"/>
+
+    <item
+        android:id="@+id/user_orders_menu"
+        android:icon="@mipmap/categories"
+        android:title="Orders"/>
+
+    <item
+        android:id="@+id/user_profile_menu"
+        android:icon="@mipmap/user"
+        android:title="Profile"/>
+
+</menu>

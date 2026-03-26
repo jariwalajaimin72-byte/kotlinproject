@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Kotlinproject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary (Main Brand) -->
+        <item name="colorPrimary">@color/roseGold</item>
+        <item name="colorPrimaryVariant">@color/deepPink</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary (Accent) -->
+        <item name="colorSecondary">@color/creamNude</item>
+        <item name="colorSecondaryVariant">@color/roseGold</item>
+        <item name="colorOnSecondary">@color/warmBrown</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/lightPinkBg</item>
+        <item name="colorSurface">@color/creamNude</item>
+        <item name="colorOnSurface">@color/warmBrown</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/deepPink</item>
+
+    </style>
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">16dp</item>  <!-- Rounded corners -->
+        <item name="android:textAllCaps">false</item> <!-- Optional: normal text -->
+    </style>
+</resources>

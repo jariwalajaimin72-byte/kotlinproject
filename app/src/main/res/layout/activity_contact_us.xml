@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    tools:context=".ui.contact.ContactUsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Back"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+           />
+
+        <!-- Title -->
+        <TextView
+            android:layout_marginTop="24dp"
+            android:text="Contact Us"
+            android:textStyle="bold"
+            android:textColor="@color/deeperPink"
+            android:textSize="28sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_marginTop="12dp"
+            android:text="If you have any questions or suggestions, you can always contact us by:"
+            android:textSize="16sp"
+            android:textColor="@color/softPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Contact Option Cards -->
+
+        <!-- Phone -->
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/creamNude"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:clipToOutline="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginHorizontal="4dp">
+
+            <ImageView
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_icon_rose"
+                android:padding="10dp"
+                android:src="@mipmap/phone"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:text="+91 7861969787"
+                android:textColorLink="@color/lightBrown"
+                android:autoLink="phone"
+                android:textColor="@color/lightBrown"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/creamNude"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:clipToOutline="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginHorizontal="4dp">
+
+            <ImageView
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_icon_rose"
+                android:padding="10dp"
+                android:src="@mipmap/email"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:text="adorableknots@gmail.com"
+                android:autoLink="email"
+                android:textColor="@color/dark_brown"
+                android:textSize="18sp"
+                android:textColorLink="@color/lightBrown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Instagram -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/creamNude"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:clipToOutline="true"
+            android:layout_marginHorizontal="4dp">
+
+            <ImageView
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_icon_rose"
+                android:padding="10dp"
+                android:src="@mipmap/instagram"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/txtInstagram"
+                android:text="adorable_knot"
+                android:textColor="@color/lightBrown"
+                android:textSize="18sp"
+                android:textColorLink="@color/lightBrown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

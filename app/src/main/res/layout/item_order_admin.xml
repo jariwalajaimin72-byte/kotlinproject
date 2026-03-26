@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:background="@color/creamNude">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/tvUser"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/dark_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Product Info -->
+        <TextView
+            android:id="@+id/tvProduct"
+            android:textSize="15sp"
+            android:textColor="@color/dark_brown"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Total Amount -->
+        <TextView
+            android:id="@+id/tvTotal"
+            android:textColor="@color/deeperPink"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Payment Type -->
+        <TextView
+            android:id="@+id/tvPayment"
+            android:textSize="14sp"
+            android:textColor="#4B2E2E"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:textSize="13sp"
+            android:textColor="#4B2E2E"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="Remove"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/rosePink"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

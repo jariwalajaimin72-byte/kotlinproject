@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPinkBg">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/headerProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="18dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/txtProductTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Crochet Products"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/warmBrown"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtProductSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add, edit and manage your handmade creations"
+            android:textSize="14sp"
+            android:textColor="@color/warmBrown"
+            android:gravity="center"
+            android:alpha="0.65"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/etrecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerProduct"
+        android:clipToPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="100dp" />
+
+    <!-- Floating Add Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="22dp"
+        android:contentDescription="Add Product"
+        app:backgroundTint="@color/softPink"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@android:color/white"
+        app:elevation="12dp" />
+
+</RelativeLayout>

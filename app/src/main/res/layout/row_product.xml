@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/creamNude"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Soft image plate (same vibe as user product) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:background="@drawable/product_image_bg"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgProd"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/logo_one"/>
+            </LinearLayout>
+
+            <!-- Text Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="12dp">
+
+                <!-- Product Name -->
+                <TextView
+                    android:id="@+id/tvProdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crochet Bag"
+                    android:textColor="@color/warmBrown"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:maxLines="2"/>
+
+                <!-- Product Price -->
+                <TextView
+                    android:id="@+id/tvProdPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 999"
+                    android:textColor="@color/deeperPink"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <!-- Edit Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnProdEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="6dp"
+                        app:backgroundTint="@color/softPink"
+                        app:cornerRadius="14dp"
+                        app:elevation="3dp"/>
+
+                    <!-- Delete Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnProdDelete"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Delete"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/deepPink"
+                        app:backgroundTint="@android:color/transparent"
+                        app:strokeColor="@color/deepPink"
+                        app:strokeWidth="2dp"
+                        app:cornerRadius="14dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
