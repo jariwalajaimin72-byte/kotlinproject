@@ -14,9 +14,6 @@ This app is designed for crochet lovers to explore beautiful knot patterns, idea
 - Android Studio
 - XML (UI Design)
 
-# 📸 Screenshots
-(Add your app screenshots here)
-
 # ▶️ How to Run
 1. Clone this repository
 2. Open the project in Android Studio
