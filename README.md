@@ -22,5 +22,5 @@ This app is designed for crochet lovers to explore beautiful knot patterns, idea
 2. Open the project in Android Studio
 3. Click Run ▶️ to start the app
 
-##👨‍💻 Author
+#👨‍💻 Author
 Jaimin Jariwala
